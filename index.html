@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="set">
+    <div class="btns">
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="rulesBtn" class="btn-new">Rules</button>
+    </div>
+        <div class="t">
+        <h2 class="h2">Results table</h2>
+        <ul id="scoresList"></ul>
+        </div>
+</div>
+    <canvas id="snake" width="800" height="800"></canvas>
+    <button id="restartBtn" class="btn new" style="display: none;">New game</button>
+    <div id="message"></div> 
+
+</div>
+
+<div id="rulesModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Control:</h2>
+        <p>1. Snake Movement: Change the direction of the snake using the arrow keys. You can play on your tablet and phone, 
+            buttons will appear on the screen.</p>
+        <h2>Game Settings:</h2>
+        <p>1. Food Count: Initially set to 5; increases by 5 when moving to the next level.</p>
+        <p>2. Periods: The game consists of 3 levels, after which it will end.</p>
+        <p>3. Score Storage: Scores are saved, limited to the last 10 games.</p>
+        <p>4. Sounds: A sound is played when food is eaten.</p>
+        <h2>Game Over:</h2>
+        <p>1. The game ends if the snake collides with the boundary or itself.</p>
+        <p>2. Upon game completion, the final score is displayed and the results are saved.</p>
+    </div>
+</div>
+
+<div id="controls">
+    <button id="upBtn">↑</button>
+    <button id="downBtn">↓</button>
+    <div>
+      <button id="leftBtn">←</button>
+      <button id="rightBtn">→</button>
+    </div>
+
+  </div>
+  
+<script src="script.js"></script>
+
+</body>
+</html>

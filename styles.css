@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Monocraft', sans-serif;
+    background-color: #141414;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: -10px;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-top: px;
+  }
+  
+  .set {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  #scoresList {
+    color: #dde0dd;
+  }
+  canvas {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 580px;
+    height: 500px;
+    background: url('./assets/bg.png');
+    background-position: center;
+    background-size: cover;
+  border-radius: 20px;
+  border: 2px solid rgb(12, 236, 98);
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .btn {
+    background-color: rgb(12, 236, 98);
+    width: 70px;
+    height: 50px;
+    border-radius: 10%;
+    color: #080808;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    align-self: center;
+  }
+  
+  .btn:hover {
+    border: 4px solid rgb(12, 236, 98);
+    background-color: #141414;
+    color: #fff;
+  }
+
+  .new {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 480px;
+    margin-bottom: auto;
+    cursor: pointer;
+    animation: blink 0.6s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+  .t {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-new {
+    border: 4px solid rgb(12, 236, 98);
+    width: 70px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #141414;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn-new:hover {
+    background-color: rgb(12, 236, 98);
+    border: none;
+    color: #080808;
+  }
+  
+  .h2 {
+    color: rgb(12, 236, 42);
+  text-align: center;
+  margin-left: 25px;
+  font-family: var(--font-family);
+  }
+  
+  li {
+    border: 1px solid rgb(12, 236, 98);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  #message {
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    overflow-y: scroll;
+    width:100%;
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 35%;
+  
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+   
+  #controls {
+    display: none;
+
+    align-items: center;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(12, 236, 98);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  
+  #controls button {
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    color: #110f0f;
+    background-color: rgb(12, 236, 98);
+  }
+
+  #controls button:hover {
+    background-color: rgb(11, 165, 37);
+
+  }
+  
+  @media (max-width: 768px) {
+    #controls {
+        display: flex;
+    }
+  }
+  @media (max-width: 610px) {
+  .modal {
+height: 100vh;
+  }
+  }
+
+  @media (max-width: 600px) {
+    canvas {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        width: 100%;
+        height: 440px;
+    }
+
+    #controls {
+        margin-top: 80px;
+    }
+  }
+  @media (max-width: 485px) {
+    #controls {
+        width: 220px;
+
+    }
+  }
+  @media (max-width: 450px) {
+    canvas {
+        margin-top: 20px;
+        margin-bottom: 4px;
+        width: 440px;
+        height: 440px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+  }
+
+  @media (max-width: 435px) {
+    canvas {
+        margin-top: 20px;
+        margin-bottom: 4px;
+        width: 410px;
+        height: 440px;
+margin-left: auto;
+margin-right: auto;
+
+    }
+
+    #controls {
+        margin-top: 20px;
+    }
+  }
+
+
